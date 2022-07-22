@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #753a88;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    margin-left: 25%;
+    width: 50%;
+    background-color: #cc2b5e;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.container .form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .form .text {
+    width: 60%;
+    height: 20px;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
+.container .form .submit {
+    margin-right: 30px;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #ff5722d9;
+    cursor: pointer;
+}
+
+.container .tasks {
+    margin-top: 40px;
+    width: 50%;
+
+}
+
+.container .tasks .task {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.container .tasks .task:hover {
+    background-color: #ffc1074f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .tasks .task.done {
+    opacity: 0.5;
+}
+
+.tasks .task .dlt {
+    float: right;
+    background-color: red;
+    border-radius: 4px;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 80%;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .container .form .submit {
+        margin-left: 20px;
+    }
+
+    .container .tasks .task {
+        position: relative;
+    }
+
+    .container .tasks .task .dlt {
+        position: absolute;
+        right: -100px;
+
+    }
+}
